@@ -84,7 +84,6 @@ const ApplicationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      // Process form submission (e.g., send data to server or display summary)
       console.log('Form data:', formData);
       alert('Form submitted successfully!');
     } else {
@@ -116,7 +115,7 @@ const ApplicationForm = () => {
   };
 
   useEffect(() => {
-    // Reset relevant fields based on applyingFor selection
+   
     if (formData.applyingFor !== 'Developer') {
       setFormData((prevData) => ({
         ...prevData,
@@ -254,7 +253,7 @@ const ApplicationForm = () => {
             />
             Python
           </label>
-          {/* Add more skills as needed */}
+        
         </div>
         {errors.additionalSkills && <span>{errors.additionalSkills}</span>}
       </div>
