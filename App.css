@@ -1,0 +1,86 @@
+/* App.css */
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding:40px 0;
+    background: rgb(44,13,198);
+    background: linear-gradient(90deg, rgba(44,13,198,1) 22%, rgba(251,40,58,1) 100%);
+  }
+  
+  .form-container {
+    width: 80%;
+    max-width: 600px;
+   
+    padding: 20px;
+    background-color: white;
+    backdrop-filter: blur(30px);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  input[type='number'],
+  input[type='datetime-local'],
+  textarea,
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+  
+  .checkbox-group {
+    display: flex;
+    
+  }
+  .checkbox-items label
+  {
+    margin:0 5px;
+    text-transform: capitalize;
+    
+  }
+  .checkbox-items label input
+  {
+    margin:0 5px;
+    
+  }
+  button[type='submit'] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.875rem;
+  }
+  
